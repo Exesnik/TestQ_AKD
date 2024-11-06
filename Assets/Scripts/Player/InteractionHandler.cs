@@ -30,8 +30,6 @@ public class InteractionHandler : MonoBehaviour
            
         }
 
-       
-
     }
 
     public void RotateHeldItem()
@@ -68,7 +66,7 @@ public class InteractionHandler : MonoBehaviour
                 
                 heldItem.gameObject.GetComponent<Rigidbody>().useGravity = false;
                 heldItem.gameObject.GetComponent<Rigidbody>().isKinematic = true; 
-                heldItem.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+               heldItem.gameObject.GetComponent<Rigidbody>().isKinematic = false;
                 
                 heldItem.SetParent(Camera.main.transform); 
             }
@@ -80,7 +78,7 @@ public class InteractionHandler : MonoBehaviour
     {
         heldItem.SetParent(null);
         heldItem.gameObject.GetComponent<Rigidbody>().useGravity = true;
-       
+        
         heldItem = null;
     }
 
